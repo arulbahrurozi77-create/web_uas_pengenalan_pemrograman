@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bahrurozi | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar">
+  <a href="#beranda" class="brand" onclick="gotoPage('beranda')">Helloo, Selamat Datang Di Portofolio Bahrurozi<span>.</span></a>
+
+  <nav class="nav-menu" id="navMenu">
+    <button class="nav-link active" data-target="beranda" onclick="gotoPage('beranda')">Beranda</button>
+    <button class="nav-link" data-target="tentang" onclick="gotoPage('tentang')">Tentang</button>
+    <button class="nav-link" data-target="keahlian" onclick="gotoPage('keahlian')">Keahlian</button>
+    <button class="nav-link" data-target="project" onclick="gotoPage('project')">Project</button>
+    <button class="nav-link" data-target="sertifikat" onclick="gotoPage('sertifikat')">Sertifikat</button>
+    <button class="nav-link" data-target="kontak" onclick="gotoPage('kontak')">Kontak</button>
+  </nav>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ============ HALAMAN: BERANDA ============ -->
+<main>
+<section id="beranda" class="page active">
+  <div class="container hero">
+    <div class="hero-text">
+      <p class="eyebrow">— Mahasiswa Informatika Universitas Islam Negeri Sultan Maulana Hasanuddin Banten</p>
+      <h1>Halo, saya<br><strong>Bahrurozi</strong></h1>
+      <p class="lead">Membangun website modern, responsif , dan user-friendly dengan teknologi web terkini. Berfokus pada Frontend Development, Backend Development , serta pengembangan solusi digital yang memberikan dampak nyata bagi pengguna</p>
+      <div class="hero-actions">
+        <button class="btn btn-dark" onclick="gotoPage('tentang')">Kenali Saya</button>
+        <button class="btn btn-outline" onclick="gotoPage('kontak')">Hubungi Saya</button>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-cv" target="_blank" rel="noopener" href="https://drive.google.com/file/d/16j6dPzUPyiLoNFL_P2LhtH8uG9fhnJb1/view?usp=drivesdk">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 17v2a2 2 0 002 2h10a2 2 0 002-2v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Download CV
+        </a>
+        <a class="btn btn-wa" target="_blank" rel="noopener" href="https://wa.me/6283117901906">
+          <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.77.46 3.45 1.32 4.95L2 22l5.27-1.38a9.9 9.9 0 004.77 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.51 2 12.04 2zm0 18.06h-.01a8.1 8.1 0 01-4.13-1.13l-.3-.18-3.13.82.84-3.05-.2-.31a8.08 8.08 0 01-1.24-4.3c0-4.49 3.66-8.15 8.16-8.15 2.18 0 4.22.85 5.76 2.39a8.1 8.1 0 012.39 5.77c0 4.49-3.66 8.14-8.14 8.14zm4.47-6.1c-.24-.12-1.45-.72-1.68-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.78.96-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.95-1.21-.72-.64-1.21-1.43-1.35-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.41.08-.16.04-.31-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.24-.86.84-.86 2.04 0 1.2.88 2.36 1 2.52.12.16 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a class="btn btn-outline btn-social" href="https://www.linkedin.com/in/bahrurozi11607?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="5" fill="#0A66C2"/><text x="12" y="16.5" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">in</text></svg>
+          LinkedIn
+        </a>
+        <a class="btn btn-outline btn-social" href="https://github.com/arulbahrurozi77-create" target="_blank" rel="noopener">
+          <img src="assets/icons/github.svg" alt="GitHub">
+          GitHub
+        </a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>Informatika</strong><span>Program Studi</span></div>
+        <div><strong>8</strong><span>Bidang Keahlian</span></div>
+        <div><strong>1</strong><span>Sertifikat Resmi</span></div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-frame">
+        <img src="profile.jpg" alt="Fot0 Bahrurozi">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HALAMAN: TENTANG ============ -->
+<section id="tentang" class="page">
+  <div class="container">
+    <p class="section-tag">01 — Profil</p>
+    <h2 class="section-title">Tentang Saya</h2>
+
+    <div class="about-grid">
+      <div class="about-photo">
+        <img src="profile.jpg" alt="Bahrurozi">
+      </div>
+      <div class="about-content">
+        <p>Halo, saya <strong>Bahrurozi</strong>. Sebagai mahasiswa program studi informatika di Universitas Islam Negeri Maulana Hasanuddin Banten yang memiliki minat besar dalam bidang Web Development , dan UI/UX Design.</p>
+        <p>Saya senang mempelejari teknologi baru serta membangun website yang modern , responsif,dan mudah di gunakan. Melalui berbagai proyek yang telah saya kerjakan,saya terus mengembangkan kemampuan dalam HTML,CSS,Javascripts,Python,dan teknologi web lain nya.</p>
+        <p>Saya juga memiliki kemampuan problem solving yang baik,mampu berkerja secara mandiri maupun dalam tim,selalu berusaha memberikan solusi digital yang bermanfaat dan berkualitas.</p>
+        <p>Saat ini saya terus belajar dan mengembangkan keterampilan untuk menjadi Web Developer profesional yang mampu menciptakan produk digital inovatif dan memberikan dampak positif bagi banyak orang. <Details></Details></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HALAMAN: KEAHLIAN ============ -->
+<section id="keahlian" class="page">
+  <div class="container">
+    <p class="section-tag">02 — Kompetensi</p>
+    <h2 class="section-title">Keahlian Saya</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon"><img src="assets/icons/html5.svg" alt="HTML5"></div>
+        <h3>HTML</h3>
+        <p>Membuat struktur halaman web yang semantik , terorganisir , dan sesuai standar untuk menghasilkan website yang mudah di kembangkan dan di optimalkan.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><img src="assets/icons/css3.svg" alt="CSS3"></div>
+        <h3>CSS</h3>
+        <p>Mendesain tampilan website yang modern , responsif, dan menarik dengan memperhatikan kenyamanan pengguna di beragai perangkat.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><img src="assets/icons/javascript.svg" alt="JavaScript"></div>
+        <h3>JavaScripts</h3>
+        <p>Mengembangkan fitur interaktif dan dinamis untuk meningkatkan pengalaman pengguna serta fungsionalitas webiste.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><img src="assets/icons/react.svg" alt="React.js"></div>
+        <h3>React.js</h3>
+        <p>Membangun antarmuka pengguna yang cepat , modern , dan eisien menggunakan pendekatan berbasis komponen.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><img src="assets/icons/nodejs.svg" alt="Backend Development"></div>
+        <h3>Backend Development</h3>
+        <p>Mengembangkan API dan sistem backend untuk mengelola data, autentikasi pengguna , serta integrasi layanan web.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><img src="assets/icons/python.svg" alt="Python"></div>
+        <h3>python</h3>
+        <p>Menggunakan Python untuk pengolahan data , pengembangan aplikasi , automasi tugas , dan implementasi solusi berbasis teknologi.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon"><img src="assets/icons/figma.svg" alt="UI/UX"></div>
+        <h3>UI/UX</h3>
+        <p>Merancang tampilan dan alur pengguna yang intutif agar website lebih mudah di gunakan dan memberikan pengalaman terbaik.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon is-double">
+          <img src="assets/icons/git.svg" alt="Git">
+          <img src="assets/icons/github.svg" alt="GitHub">
+        </div>
+        <h3>Git & Github</h3>
+        <p>Mengelola kode sumber , kolaborasi tim dan dokumentasi proyek menggunakan git dan github secara efektif.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ HALAMAN: PROJECT ============ -->
+
+
+
+
+<section id="project" class="page">
+<div class="container">
+<p class="section-tag">03 — Portfolio</p>
+<h2 class="section-title">Project Saya</h2>
+
+<div class="project-card">
+  <div class="project-image-wrap">
+    <img src="assets/catatan.png" alt="Aplikasi Catatan">
+  </div>
+  <div class="project-info">
+    <h3>Aplikasi Catatan</h3>
+    <p>Aplikasi pencatatan berbasis web yang memungkinkan pengguna membuat, mengedit, menghapus, dan mengelola catatan dengan tampilan responsif.</p>
+    <a class="demo-btn" href="https://arulbahrurozi77-create.github.io/catatan/" target="_blank">🚀 Live Demo</a>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="project-image-wrap">
+    <img src="assets/doomtracker.png" alt="DoomTracker AI">
+  </div>
+  <div class="project-info">
+    <h3>DoomTracker AI</h3>
+    <p>Aplikasi monitoring keuangan berbasis AI yang membantu pengguna menganalisis pengeluaran dan memprediksi kondisi finansial.</p>
+    <a class="demo-btn" href="https://doom-tracker-rho.vercel.app/login" target="_blank">🚀 Live Demo</a>
+  </div>
+</div>
+
+</div>
+</section>
+
+
+
+
+
+<!-- ============ HALAMAN: SERTIFIKAT ============ -->
+
+
+<section id="sertifikat" class="page">
+<div class="container">
+<p class="section-tag">04 — Certificate</p>
+<h2 class="section-title">Sertifikat Saya</h2>
+<div style="display:grid;gap:30px;">
+
+<div class="skill-card"><img src="assets/sertifikat_1.png" style="width:100%"><h3>Pengenalan ke Logika Pemrograman</h3><p>Berlaku hingga 11 Februari 2029.</p></div>
+<div class="skill-card"><img src="assets/sertifikat_2.png" style="width:100%"><h3>Belajar Dasar Cloud dan Gen AI di AWS</h3><p>Berlaku hingga 16 Februari 2029.</p></div>
+<div class="skill-card"><img src="assets/sertifikat_3.png" style="width:100%"><h3>Memulai Pemrograman Dengan C</h3><p>Berlaku hingga 20 Februari 2029.</p></div>
+<div class="skill-card"><img src="assets/sertifikat_4.png" style="width:100%"><h3>Belajar Dasar Pemrograman Web</h3><p>Berlaku hingga 27 Februari 2029.</p></div>
+<div class="skill-card"><img src="assets/sertifikat_5.png" style="width:100%"><h3>Belajar Dasar Pemrograman JavaScript</h3><p>Berlaku hingga 18 Maret 2029.</p></div>
+<div class="skill-card"><img src="assets/sertifikat_6.png" style="width:100%"><h3>Memulai Pemrograman dengan Haskell</h3><p>Berlaku hingga 27 Maret 2029.</p></div>
+<div class="skill-card"><img src="assets/sertifikat_7.png" style="width:100%"><h3>Belajar Membuat Front-End Web untuk Pemula</h3><p>Berlaku hingga 3 April 2029.</p></div>
+<div class="skill-card"><img src="assets/sertifikat_8.png" style="width:100%"><h3>Belajar Membuat Aplikasi Web dengan React</h3><p>Berlaku hingga 11 April 2029.</p></div>
+<div class="skill-card"><img src="assets/sertifikat_9.png" style="width:100%"><h3>Belajar Fundamental Aplikasi Web dengan React</h3><p>Berlaku hingga 1 Mei 2029.</p></div>
+<div class="skill-card"><img src="assets/sertifikat_10.png" style="width:100%"><h3>Belajar Back-End Pemula dengan JavaScript</h3><p>Berlaku hingga 9 Mei 2029.</p></div>
+<div class="skill-card"><img src="assets/sertifikat_11.png" style="width:100%"><h3>Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</h3><p>Berlaku hingga 10 Februari 2029.</p></div>
+<div class="skill-card"><img src="assets/sertifikat_12.png" style="width:100%"><h3>Sertifikat Tambahan Dicoding</h3><p>Sertifikat kompetensi pengembangan perangkat lunak.</p></div>
+<div class="skill-card"><img src="assets/sertifikat_13.png" style="width:100%"><h3>Seminar & Bootcamp HMPS Informatika</h3><p>Peserta Seminar dan Bootcamp Teknologi Informasi.</p></div>
+<div class="skill-card"><img src="assets/sertifikat_14.png" style="width:100%"><h3>Bedah Buku Fakultas Sains</h3><p>Peserta kegiatan Bedah Buku Dies Natalis Fakultas Sains.</p></div>
+<div class="skill-card"><img src="assets/sertifikat_15.png" style="width:100%"><h3>IT Camp HMPS Informatika</h3><p>Peserta IT Camp dengan tema Hello World: Connecting Minds, Creating Innovation.</p></div>
+
+</div>
+</div>
+</section>
+
+
+
+<!-- ============ HALAMAN: KONTAK ============ -->
+<section id="kontak" class="page">
+  <div class="container">
+    <p class="section-tag">04 — Kontak</p>
+    <h2 class="section-title">Mari Berdiskusi</h2>
+
+    <div class="contact-grid">
+      <div class="contact-text">
+        <p>Saya terbuka untuk peluang magang, kolaborasi proyek, maupun sekadar diskusi seputar desain dan teknologi. Silakan hubungi saya melalui kontak berikut.</p>
+        <a class="contact-row" href="https://wa.me/6283117901906" target="_blank">
+          <span class="contact-label">WhatsApp</span>
+          <span class="contact-value">+62 831-1790-1906</span>
+        </a>
+        <div class="contact-row">
+          <span class="contact-label">Program Studi</span>
+          <span class="contact-value">informatika </span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">Lokasi</span>
+          <span class="contact-value">Indonesia</span>
+        </div>
+      </div>
+
+      <form class="contact-form" onsubmit="kirimPesan(event)">
+        <label>Nama Lengkap
+          <input type="text" placeholder="Nama Anda" required>
+        </label>
+        <label>Email
+          <input type="email" placeholder="email@contoh.com" required>
+        </label>
+        <label>Pesan
+          <textarea placeholder="Tulis pesan Anda di sini..." required></textarea>
+        </label>
+        <button type="submit" class="btn btn-dark btn-full">Kirim Pesan</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Bahrurozi — informatika</p>
+</footer>
+
+<script>
+function gotoPage(id){
+  document.querySelectorAll('.page').forEach(function(p){ p.classList.remove('active'); });
+  document.getElementById(id).classList.add('active');
+
+  document.querySelectorAll('.nav-link').forEach(function(btn){
+    btn.classList.toggle('active', btn.dataset.target === id);
+  });
+
+  document.getElementById('navMenu').classList.remove('open');
+  document.getElementById('navToggle').classList.remove('open');
+
+  window.scrollTo({top: 0, behavior: 'instant'});
+  history.replaceState(null, '', '#' + id);
+}
+
+document.getElementById('navToggle').addEventListener('click', function(){
+  document.getElementById('navMenu').classList.toggle('open');
+  this.classList.toggle('open');
+});
+
+window.addEventListener('DOMContentLoaded', function(){
+  var hash = window.location.hash.replace('#', '');
+  var valid = ['beranda','tentang','keahlian','project','sertifikat','kontak'];
+  if (valid.indexOf(hash) !== -1) gotoPage(hash);
+});
+
+function kirimPesan(e){
+  e.preventDefault();
+  alert('Terima kasih! Pesan Anda telah terkirim.');
+  e.target.reset();
+}
+</script>
+</body>
+</html>
