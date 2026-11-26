@@ -35,7 +35,6 @@
   </script>
   
   <style>
-    /* Custom Scrollbar & Page Tab Visibility */
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #020617; }
     ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
@@ -67,19 +66,20 @@
         <span class="text-xl font-bold tracking-tight text-white group-hover:text-emerald-400 transition-colors">
           Bahrurozi<span class="text-emerald-500">.</span>
         </span>
-        <span class="hidden sm:inline-block px-2 py-0.5 text-[10px] font-mono font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full">
+        <span class="hidden lg:inline-block px-2 py-0.5 text-[10px] font-mono font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full">
           Informatika UIN SMH Banten
         </span>
       </a>
 
       <!-- Desktop Navigation Menu -->
       <nav class="hidden md:flex items-center gap-1 bg-slate-900/60 p-1.5 rounded-full border border-slate-800/80">
-        <button class="nav-btn active px-4 py-2 text-xs font-semibold rounded-full transition-all text-slate-400 hover:text-white" data-target="beranda" onclick="gotoPage('beranda')">Beranda</button>
-        <button class="nav-btn px-4 py-2 text-xs font-semibold rounded-full transition-all text-slate-400 hover:text-white" data-target="tentang" onclick="gotoPage('tentang')">Tentang</button>
-        <button class="nav-btn px-4 py-2 text-xs font-semibold rounded-full transition-all text-slate-400 hover:text-white" data-target="keahlian" onclick="gotoPage('keahlian')">Keahlian</button>
-        <button class="nav-btn px-4 py-2 text-xs font-semibold rounded-full transition-all text-slate-400 hover:text-white" data-target="project" onclick="gotoPage('project')">Project</button>
-        <button class="nav-btn px-4 py-2 text-xs font-semibold rounded-full transition-all text-slate-400 hover:text-white" data-target="sertifikat" onclick="gotoPage('sertifikat')">Sertifikat</button>
-        <button class="nav-btn px-4 py-2 text-xs font-semibold rounded-full transition-all text-slate-400 hover:text-white" data-target="kontak" onclick="gotoPage('kontak')">Kontak</button>
+        <button class="nav-btn active px-3.5 py-2 text-xs font-semibold rounded-full transition-all text-slate-400 hover:text-white" data-target="beranda" onclick="gotoPage('beranda')">Beranda</button>
+        <button class="nav-btn px-3.5 py-2 text-xs font-semibold rounded-full transition-all text-slate-400 hover:text-white" data-target="tentang" onclick="gotoPage('tentang')">Tentang</button>
+        <button class="nav-btn px-3.5 py-2 text-xs font-semibold rounded-full transition-all text-slate-400 hover:text-white" data-target="keahlian" onclick="gotoPage('keahlian')">Keahlian</button>
+        <button class="nav-btn px-3.5 py-2 text-xs font-semibold rounded-full transition-all text-slate-400 hover:text-white" data-target="project" onclick="gotoPage('project')">Project</button>
+        <button class="nav-btn px-3.5 py-2 text-xs font-semibold rounded-full transition-all text-slate-400 hover:text-white" data-target="organisasi" onclick="gotoPage('organisasi')">Organisasi</button>
+        <button class="nav-btn px-3.5 py-2 text-xs font-semibold rounded-full transition-all text-slate-400 hover:text-white" data-target="sertifikat" onclick="gotoPage('sertifikat')">Sertifikat</button>
+        <button class="nav-btn px-3.5 py-2 text-xs font-semibold rounded-full transition-all text-slate-400 hover:text-white" data-target="kontak" onclick="gotoPage('kontak')">Kontak</button>
       </nav>
 
       <!-- CTA Button Navbar -->
@@ -101,6 +101,7 @@
       <button class="text-left py-2 text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors" onclick="gotoPage('tentang')"><i class="fa-solid fa-user w-6"></i> Tentang</button>
       <button class="text-left py-2 text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors" onclick="gotoPage('keahlian')"><i class="fa-solid fa-code w-6"></i> Keahlian</button>
       <button class="text-left py-2 text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors" onclick="gotoPage('project')"><i class="fa-solid fa-laptop-code w-6"></i> Project</button>
+      <button class="text-left py-2 text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors" onclick="gotoPage('organisasi')"><i class="fa-solid fa-users w-6"></i> Pengalaman Organisasi</button>
       <button class="text-left py-2 text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors" onclick="gotoPage('sertifikat')"><i class="fa-solid fa-certificate w-6"></i> Sertifikat</button>
       <button class="text-left py-2 text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors" onclick="gotoPage('kontak')"><i class="fa-solid fa-paper-plane w-6"></i> Kontak</button>
     </div>
@@ -115,7 +116,7 @@
         
         <!-- Hero Text -->
         <div class="lg:col-span-7 space-y-6">
-          <div class="inline-flex items-center gap-2 px-3 me border border-emerald-500/30 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-mono font-semibold py-1">
+          <div class="inline-flex items-center gap-2 px-3 border border-emerald-500/30 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-mono font-semibold py-1">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             Mahasiswa Informatika UIN SMH Banten
           </div>
@@ -126,7 +127,7 @@
           </h1>
 
           <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-2xl">
-            Membangun website modern, responsif, dan <span class="text-slate-200 font-medium">user-friendly</span> dengan teknologi web terkini. Berfokus pada Frontend & Backend Development, serta pengembangan solusi digital yang memberikan dampak nyata bagi pengguna.
+            Membangun website modern, responsif, dan <span class="text-slate-200 font-medium">user-friendly</span> dengan teknologi web terkini. Berfokus pada Frontend & Backend Development, jaringan & keamanan siber, serta aktif memimpin kegiatan kemahasiswaan.
           </p>
 
           <!-- Primary Actions -->
@@ -134,12 +135,15 @@
             <button onclick="gotoPage('tentang')" class="px-6 py-3.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-xl transition-all shadow-lg shadow-emerald-500/25 flex items-center gap-2">
               <i class="fa-solid fa-user-astronaut"></i> Kenali Saya
             </button>
+            <button onclick="gotoPage('organisasi')" class="px-6 py-3.5 bg-slate-900 hover:bg-slate-800 border border-slate-700/80 text-slate-200 font-semibold rounded-xl transition-all flex items-center gap-2">
+              <i class="fa-solid fa-users text-emerald-400"></i> Organisasi
+            </button>
             <button onclick="gotoPage('kontak')" class="px-6 py-3.5 bg-slate-900 hover:bg-slate-800 border border-slate-700/80 text-slate-200 font-semibold rounded-xl transition-all">
               Hubungi Saya
             </button>
           </div>
 
-          <!-- Secondary CTA Links (CV, WA, Socials) -->
+          <!-- Secondary CTA Links -->
           <div class="flex flex-wrap items-center gap-3 pt-2">
             <a href="https://drive.google.com/file/d/16j6dPzUPyiLoNFL_P2LhtH8uG9fhnJb1/view?usp=drivesdk" target="_blank" rel="noopener" class="px-4 py-2.5 bg-slate-900 hover:bg-slate-800 border border-slate-800 rounded-lg text-xs font-semibold text-slate-300 hover:text-white transition-all flex items-center gap-2">
               <i class="fa-solid fa-download text-emerald-400"></i> Download CV
@@ -156,17 +160,21 @@
           </div>
 
           <!-- Quick Stats Cards -->
-          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800/80">
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-slate-800/80">
             <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800">
-              <span class="block text-xl font-bold text-emerald-400 font-mono">Informatika</span>
+              <span class="block text-lg font-bold text-emerald-400 font-mono">Informatika</span>
               <span class="text-xs text-slate-400">Program Studi</span>
             </div>
             <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800">
-              <span class="block text-xl font-bold text-cyan-400 font-mono">8+</span>
+              <span class="block text-lg font-bold text-cyan-400 font-mono">8+</span>
               <span class="text-xs text-slate-400">Bidang Keahlian</span>
             </div>
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800">
-              <span class="block text-xl font-bold text-teal-400 font-mono">15</span>
+            <div onclick="gotoPage('organisasi')" class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 hover:border-emerald-500/40 cursor-pointer transition-colors">
+              <span class="block text-lg font-bold text-purple-400 font-mono">4</span>
+              <span class="text-xs text-slate-400">Peran Organisasi</span>
+            </div>
+            <div onclick="gotoPage('sertifikat')" class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 hover:border-emerald-500/40 cursor-pointer transition-colors">
+              <span class="block text-lg font-bold text-teal-400 font-mono">25</span>
               <span class="text-xs text-slate-400">Sertifikat Resmi</span>
             </div>
           </div>
@@ -205,13 +213,13 @@
         <!-- Content -->
         <div class="lg:col-span-7 space-y-5 text-slate-300 text-base leading-relaxed">
           <p>
-            Halo, saya <strong class="text-emerald-400 font-semibold">Bahrurozi</strong>. Sebagai mahasiswa program studi Informatika di Universitas Islam Negeri Sultan Maulana Hasanuddin Banten, saya memiliki ketertarikan tinggi dalam pengembangan web modern, otomatisasi perangkat lunak, serta perancangan <span class="text-white">UI/UX Design</span>.
+            Halo, saya <strong class="text-emerald-400 font-semibold">Bahrurozi</strong>. Sebagai mahasiswa program studi Informatika di Universitas Islam Negeri Sultan Maulana Hasanuddin Banten, saya memiliki ketertarikan tinggi dalam pengembangan web modern, jaringan komputer, keamanan siber, serta perancangan <span class="text-white">UI/UX Design</span>.
           </p>
           <p>
-            Saya senang mempelajari teknologi baru dan mengimplementasikannya ke dalam proyek nyata. Melalui berbagai pengerjaan aplikasi web dan riset teknologi, saya mengasah keahlian dalam HTML, CSS, JavaScript, React.js, Python, PHP, serta ekosistem backend.
+            Saya senang mempelajari teknologi baru dan mengimplementasikannya ke dalam proyek nyata. Melalui berbagai pengerjaan aplikasi web, pelatihan teknis, dan sertifikasi kompetensi, saya mengasah keahlian dalam HTML, CSS, JavaScript, React.js, Python, PHP, Linux, hingga administrasi jaringan.
           </p>
           <p>
-            Saya berprinsip pada pemecahan masalah (problem solving) yang terstruktur, mampu bekerja mandiri maupun berkolaborasi dalam tim, serta berkomitmen memberikan solusi digital yang bersih, efisien, dan bermanfaat luas.
+            Selain fokus akademik dan teknis, saya juga aktif mengembangkan kepemimpinan dan kerja sama tim melalui kepengurusan Himpunan Mahasiswa Program Studi (HMPS) Informatika serta berbagai kepanitiaan berskala jurusan maupun fakultas.
           </p>
 
           <!-- Quick Info Cards -->
@@ -242,7 +250,6 @@
         <h2 class="text-3xl font-extrabold text-white">Keahlian & Teknologi</h2>
       </div>
 
-      <!-- Bento Grid Skills -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
         <!-- Skill 1 -->
@@ -398,11 +405,123 @@
       </div>
     </section>
 
-    <!-- ============ HALAMAN 5: SERTIFIKAT ============ -->
+    <!-- ============ HALAMAN 5: PENGALAMAN ORGANISASI ============ -->
+    <section id="organisasi" class="page-section max-w-6xl mx-auto px-6 py-8">
+      <div class="mb-10 space-y-2">
+        <span class="text-xs font-mono font-semibold text-emerald-400 uppercase tracking-widest">04 — Kepemimpinan & Kontribusi</span>
+        <h2 class="text-3xl font-extrabold text-white">Pengalaman Organisasi & Kepanitiaan</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Org 1 -->
+        <div class="bg-slate-900 p-6 sm:p-7 rounded-2xl border border-slate-800 hover:border-emerald-500/50 transition-all group flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-start justify-between gap-4">
+              <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-xl flex items-center justify-center text-xl shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-sitemap"></i>
+              </div>
+              <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full text-xs font-mono font-semibold">
+                Periode 2026
+              </span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Pengurus Aktif — Departemen Internal</h3>
+              <p class="text-xs font-medium text-cyan-400 mt-1">Himpunan Mahasiswa Program Studi (HMPS) Informatika</p>
+            </div>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+              Berperan aktif menjaga solidaritas dan sinergi antar pengurus himpunan, mengelola komunikasi internal organisasi, serta mengawal pelaksanaan program kerja internal mahasiswa Informatika UIN SMH Banten.
+            </p>
+          </div>
+          <div class="pt-5 mt-5 border-t border-slate-800/80 flex items-center gap-2 text-[11px] font-mono text-slate-400">
+            <i class="fa-solid fa-building-columns text-emerald-400"></i>
+            <span>UIN Sultan Maulana Hasanuddin Banten</span>
+          </div>
+        </div>
+
+        <!-- Org 2 -->
+        <div class="bg-slate-900 p-6 sm:p-7 rounded-2xl border border-slate-800 hover:border-cyan-500/50 transition-all group flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-start justify-between gap-4">
+              <div class="w-12 h-12 bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 rounded-xl flex items-center justify-center text-xl shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-crown"></i>
+              </div>
+              <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 rounded-full text-xs font-mono font-semibold">
+                2026
+              </span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">Ketua Pelaksana — Meet and Greet Mahasiswa Informatika</h3>
+              <p class="text-xs font-medium text-emerald-400 mt-1">HMPS Informatika UIN SMH Banten</p>
+            </div>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+              Memimpin keseluruhan perencanaan kegiatan, mengoordinasikan seluruh divisi kepanitiaan, mengelola alur acara, serta memastikan terjalinnya keakraban antar angkatan mahasiswa Informatika.
+            </p>
+          </div>
+          <div class="pt-5 mt-5 border-t border-slate-800/80 flex items-center gap-2 text-[11px] font-mono text-slate-400">
+            <i class="fa-solid fa-award text-cyan-400"></i>
+            <span>Leadership & Event Management</span>
+          </div>
+        </div>
+
+        <!-- Org 3 -->
+        <div class="bg-slate-900 p-6 sm:p-7 rounded-2xl border border-slate-800 hover:border-teal-500/50 transition-all group flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-start justify-between gap-4">
+              <div class="w-12 h-12 bg-teal-500/10 text-teal-400 border border-teal-500/20 rounded-xl flex items-center justify-center text-xl shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-clipboard-list"></i>
+              </div>
+              <span class="px-3 py-1 bg-teal-500/10 text-teal-400 border border-teal-500/20 rounded-full text-xs font-mono font-semibold">
+                2026
+              </span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white group-hover:text-teal-400 transition-colors">Koordinator Divisi Acara — IT Camp 2026 (OSPEK Jurusan)</h3>
+              <p class="text-xs font-medium text-cyan-400 mt-1">HMPS Informatika UIN SMH Banten</p>
+            </div>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+              Merancang konsep rangkaian acara orientasi mahasiswa baru tingkat jurusan Informatika, menyusun jadwal (rundown) strategis, serta mengoordinasikan teknis jalannya kegiatan di lapangan.
+            </p>
+          </div>
+          <div class="pt-5 mt-5 border-t border-slate-800/80 flex items-center gap-2 text-[11px] font-mono text-slate-400">
+            <i class="fa-solid fa-compass text-teal-400"></i>
+            <span>Orientasi Mahasiswa Baru Jurusan</span>
+          </div>
+        </div>
+
+        <!-- Org 4 -->
+        <div class="bg-slate-900 p-6 sm:p-7 rounded-2xl border border-slate-800 hover:border-purple-500/50 transition-all group flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-start justify-between gap-4">
+              <div class="w-12 h-12 bg-purple-500/10 text-purple-400 border border-purple-500/20 rounded-xl flex items-center justify-center text-xl shrink-0 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-users-gear"></i>
+              </div>
+              <span class="px-3 py-1 bg-purple-500/10 text-purple-400 border border-purple-500/20 rounded-full text-xs font-mono font-semibold">
+                2026
+              </span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white group-hover:text-purple-400 transition-colors">Panitia Pelaksana — PBAK Fakultas Sains dan Teknologi</h3>
+              <p class="text-xs font-medium text-emerald-400 mt-1">Fakultas Sains dan Teknologi, UIN SMH Banten</p>
+            </div>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+              Berkontribusi aktif dalam kepanitiaan Pengenalan Budaya Akademik dan Kemahasiswaan (PBAK) tingkat fakultas guna menyambut serta membimbing mahasiswa baru lintas program studi.
+            </p>
+          </div>
+          <div class="pt-5 mt-5 border-t border-slate-800/80 flex items-center gap-2 text-[11px] font-mono text-slate-400">
+            <i class="fa-solid fa-university text-purple-400"></i>
+            <span>Kepanitiaan Tingkat Fakultas</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ HALAMAN 6: SERTIFIKAT ============ -->
     <section id="sertifikat" class="page-section max-w-6xl mx-auto px-6 py-8">
       <div class="mb-10 space-y-2">
-        <span class="text-xs font-mono font-semibold text-emerald-400 uppercase tracking-widest">04 — Lisensi & Sertifikasi</span>
-        <h2 class="text-3xl font-extrabold text-white">Sertifikat Resmi (15)</h2>
+        <span class="text-xs font-mono font-semibold text-emerald-400 uppercase tracking-widest">05 — Lisensi & Sertifikasi</span>
+        <h2 class="text-3xl font-extrabold text-white">Sertifikat Resmi (25)</h2>
       </div>
 
       <!-- Certificate Grid Cards -->
@@ -417,7 +536,7 @@
             </div>
           </div>
           <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">Pengenalan ke Logika Pemrograman</h3>
-          <p class="text-xs text-slate-400 mt-1 font-mono">Berlaku hingga 11 Februari 2029.</p>
+          <p class="text-xs text-slate-400 mt-1 font-mono">Dicoding • Berlaku hingga 11 Feb 2029</p>
         </div>
 
         <!-- Cert 2 -->
@@ -429,7 +548,7 @@
             </div>
           </div>
           <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">Belajar Dasar Cloud dan Gen AI di AWS</h3>
-          <p class="text-xs text-slate-400 mt-1 font-mono">Berlaku hingga 16 Februari 2029.</p>
+          <p class="text-xs text-slate-400 mt-1 font-mono">Dicoding • Berlaku hingga 16 Feb 2029</p>
         </div>
 
         <!-- Cert 3 -->
@@ -441,7 +560,7 @@
             </div>
           </div>
           <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">Memulai Pemrograman Dengan C</h3>
-          <p class="text-xs text-slate-400 mt-1 font-mono">Berlaku hingga 20 Februari 2029.</p>
+          <p class="text-xs text-slate-400 mt-1 font-mono">Dicoding • Berlaku hingga 20 Feb 2029</p>
         </div>
 
         <!-- Cert 4 -->
@@ -453,7 +572,7 @@
             </div>
           </div>
           <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">Belajar Dasar Pemrograman Web</h3>
-          <p class="text-xs text-slate-400 mt-1 font-mono">Berlaku hingga 27 Februari 2029.</p>
+          <p class="text-xs text-slate-400 mt-1 font-mono">Dicoding • Berlaku hingga 27 Feb 2029</p>
         </div>
 
         <!-- Cert 5 -->
@@ -465,7 +584,7 @@
             </div>
           </div>
           <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">Belajar Dasar Pemrograman JavaScript</h3>
-          <p class="text-xs text-slate-400 mt-1 font-mono">Berlaku hingga 18 Maret 2029.</p>
+          <p class="text-xs text-slate-400 mt-1 font-mono">Dicoding • Berlaku hingga 18 Mar 2029</p>
         </div>
 
         <!-- Cert 6 -->
@@ -477,7 +596,7 @@
             </div>
           </div>
           <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">Memulai Pemrograman dengan Haskell</h3>
-          <p class="text-xs text-slate-400 mt-1 font-mono">Berlaku hingga 27 Maret 2029.</p>
+          <p class="text-xs text-slate-400 mt-1 font-mono">Dicoding • Berlaku hingga 27 Mar 2029</p>
         </div>
 
         <!-- Cert 7 -->
@@ -489,7 +608,7 @@
             </div>
           </div>
           <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">Belajar Membuat Front-End Web untuk Pemula</h3>
-          <p class="text-xs text-slate-400 mt-1 font-mono">Berlaku hingga 3 April 2029.</p>
+          <p class="text-xs text-slate-400 mt-1 font-mono">Dicoding • Berlaku hingga 3 Apr 2029</p>
         </div>
 
         <!-- Cert 8 -->
@@ -501,7 +620,7 @@
             </div>
           </div>
           <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">Belajar Membuat Aplikasi Web dengan React</h3>
-          <p class="text-xs text-slate-400 mt-1 font-mono">Berlaku hingga 11 April 2029.</p>
+          <p class="text-xs text-slate-400 mt-1 font-mono">Dicoding • Berlaku hingga 11 Apr 2029</p>
         </div>
 
         <!-- Cert 9 -->
@@ -513,7 +632,7 @@
             </div>
           </div>
           <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">Belajar Fundamental Aplikasi Web dengan React</h3>
-          <p class="text-xs text-slate-400 mt-1 font-mono">Berlaku hingga 1 Mei 2029.</p>
+          <p class="text-xs text-slate-400 mt-1 font-mono">Dicoding • Berlaku hingga 1 Mei 2029</p>
         </div>
 
         <!-- Cert 10 -->
@@ -525,7 +644,7 @@
             </div>
           </div>
           <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">Belajar Back-End Pemula dengan JavaScript</h3>
-          <p class="text-xs text-slate-400 mt-1 font-mono">Berlaku hingga 9 Mei 2029.</p>
+          <p class="text-xs text-slate-400 mt-1 font-mono">Dicoding • Berlaku hingga 9 Mei 2029</p>
         </div>
 
         <!-- Cert 11 -->
@@ -537,7 +656,7 @@
             </div>
           </div>
           <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">Memulai Dasar Pemrograman Software</h3>
-          <p class="text-xs text-slate-400 mt-1 font-mono">Berlaku hingga 10 Februari 2029.</p>
+          <p class="text-xs text-slate-400 mt-1 font-mono">Dicoding • Berlaku hingga 10 Feb 2029</p>
         </div>
 
         <!-- Cert 12 -->
@@ -588,13 +707,133 @@
           <p class="text-xs text-slate-400 mt-1">Peserta IT Camp "Hello World: Connecting Minds".</p>
         </div>
 
+        <!-- Cert 16 -->
+        <div onclick="openModal('assets/sertifikat_16.jpg', 'General Knowledge of Computer Networks (Huawei ICT Academy)')" class="bg-slate-900 rounded-2xl border border-slate-800 p-4 hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="h-44 bg-slate-800 rounded-xl overflow-hidden mb-4 relative">
+            <img src="assets/sertifikat_16.jpg" alt="General Knowledge of Computer Networks" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-medium gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i> Perbesar
+            </div>
+          </div>
+          <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">General Knowledge of Computer Networks</h3>
+          <p class="text-xs text-slate-400 mt-1 font-mono">Huawei ICT Academy • 15 Okt 2026</p>
+        </div>
+
+        <!-- Cert 17 -->
+        <div onclick="openModal('assets/sertifikat_17.jpg', 'HCIA-Datacom V1.0 Course (Huawei ICT Academy)')" class="bg-slate-900 rounded-2xl border border-slate-800 p-4 hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="h-44 bg-slate-800 rounded-xl overflow-hidden mb-4 relative">
+            <img src="assets/sertifikat_17.jpg" alt="HCIA-Datacom V1.0 Course" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-medium gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i> Perbesar
+            </div>
+          </div>
+          <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">HCIA-Datacom V1.0 Course</h3>
+          <p class="text-xs text-slate-400 mt-1 font-mono">Huawei ICT Academy • 15 Okt 2026</p>
+        </div>
+
+        <!-- Cert 18 -->
+        <div onclick="openModal('assets/sertifikat_18.jpg', 'Cisco Dasar (ID-Networkers)')" class="bg-slate-900 rounded-2xl border border-slate-800 p-4 hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="h-44 bg-slate-800 rounded-xl overflow-hidden mb-4 relative">
+            <img src="assets/sertifikat_18.jpg" alt="Cisco Dasar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-medium gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i> Perbesar
+            </div>
+          </div>
+          <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">Cisco Dasar</h3>
+          <p class="text-xs text-slate-400 mt-1 font-mono">ID-Networkers • 15 Okt 2026</p>
+        </div>
+
+        <!-- Cert 19 -->
+        <div onclick="openModal('assets/sertfikat_19.jpg', 'Mikrotik Dasar (ID-Networkers)')" class="bg-slate-900 rounded-2xl border border-slate-800 p-4 hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="h-44 bg-slate-800 rounded-xl overflow-hidden mb-4 relative">
+            <img src="assets/sertfikat_19.jpg" alt="Mikrotik Dasar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-medium gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i> Perbesar
+            </div>
+          </div>
+          <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">Mikrotik Dasar</h3>
+          <p class="text-xs text-slate-400 mt-1 font-mono">ID-Networkers • 15 Okt 2026</p>
+        </div>
+
+        <!-- Cert 20 -->
+        <div onclick="openModal('assets/sertifikat_20.jpg', 'HCIA-Security V4.0 Course (Huawei ICT Academy)')" class="bg-slate-900 rounded-2xl border border-slate-800 p-4 hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="h-44 bg-slate-800 rounded-xl overflow-hidden mb-4 relative">
+            <img src="assets/sertifikat_20.jpg" alt="HCIA-Security V4.0 Course" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-medium gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i> Perbesar
+            </div>
+          </div>
+          <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">HCIA-Security V4.0 Course</h3>
+          <p class="text-xs text-slate-400 mt-1 font-mono">Huawei ICT Academy • 27 Okt 2026</p>
+        </div>
+
+        <!-- Cert 21 -->
+        <div onclick="openModal('assets/sertifikat_21.jpg', 'Jaringan Dasar (ID-Networkers)')" class="bg-slate-900 rounded-2xl border border-slate-800 p-4 hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="h-44 bg-slate-800 rounded-xl overflow-hidden mb-4 relative">
+            <img src="assets/sertifikat_21.jpg" alt="Jaringan Dasar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-medium gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i> Perbesar
+            </div>
+          </div>
+          <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">Jaringan Dasar</h3>
+          <p class="text-xs text-slate-400 mt-1 font-mono">ID-Networkers • 15 Okt 2026</p>
+        </div>
+
+        <!-- Cert 22 -->
+        <div onclick="openModal('assets/sertifikat_22.jpg', 'Belajar Cyber Security dari Nol (ID-Networkers)')" class="bg-slate-900 rounded-2xl border border-slate-800 p-4 hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="h-44 bg-slate-800 rounded-xl overflow-hidden mb-4 relative">
+            <img src="assets/sertifikat_22.jpg" alt="Belajar Cyber Security dari Nol" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-medium gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i> Perbesar
+            </div>
+          </div>
+          <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">Belajar Cyber Security dari Nol</h3>
+          <p class="text-xs text-slate-400 mt-1 font-mono">ID-Networkers • 3 Okt 2026</p>
+        </div>
+
+        <!-- Cert 23 -->
+        <div onclick="openModal('assets/sertifikat_23.jpg', 'Belajar Linux dari Nol (ID-Networkers)')" class="bg-slate-900 rounded-2xl border border-slate-800 p-4 hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="h-44 bg-slate-800 rounded-xl overflow-hidden mb-4 relative">
+            <img src="assets/sertifikat_23.jpg" alt="Belajar Linux dari Nol" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-medium gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i> Perbesar
+            </div>
+          </div>
+          <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">Belajar Linux dari Nol</h3>
+          <p class="text-xs text-slate-400 mt-1 font-mono">ID-Networkers • 3 Okt 2026</p>
+        </div>
+
+        <!-- Cert 24 -->
+        <div onclick="openModal('assets/sertifikat_24.jpg', 'WordPress Campus Connect (WPCC) UIN SMH Banten 2026')" class="bg-slate-900 rounded-2xl border border-slate-800 p-4 hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="h-44 bg-slate-800 rounded-xl overflow-hidden mb-4 relative">
+            <img src="assets/sertifikat_24.jpg" alt="WordPress Campus Connect 2026" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-medium gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i> Perbesar
+            </div>
+          </div>
+          <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">WordPress Campus Connect (WPCC) 2026</h3>
+          <p class="text-xs text-slate-400 mt-1 font-mono">UIN SMH Banten • 17 Sep 2026</p>
+        </div>
+
+        <!-- Cert 25 -->
+        <div onclick="openModal('assets/sertifikat_25.jpg', 'Pelatihan Kemahasiswaan Beyond the Leader - FST UIN SMH Banten')" class="bg-slate-900 rounded-2xl border border-slate-800 p-4 hover:border-emerald-500/50 transition-all cursor-pointer group">
+          <div class="h-44 bg-slate-800 rounded-xl overflow-hidden mb-4 relative">
+            <img src="assets/sertifikat_25.jpg" alt="Pelatihan Kemahasiswaan Beyond the Leader" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-medium gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-base"></i> Perbesar
+            </div>
+          </div>
+          <h3 class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">Pelatihan Kemahasiswaan: Beyond the Leader</h3>
+          <p class="text-xs text-slate-400 mt-1 font-mono">FST UIN SMH Banten • 18 Nov 2026</p>
+        </div>
+
       </div>
     </section>
 
-    <!-- ============ HALAMAN 6: KONTAK ============ -->
+    <!-- ============ HALAMAN 7: KONTAK ============ -->
     <section id="kontak" class="page-section max-w-6xl mx-auto px-6 py-8">
       <div class="mb-10 space-y-2">
-        <span class="text-xs font-mono font-semibold text-emerald-400 uppercase tracking-widest">05 — Diskusi & Kolaborasi</span>
+        <span class="text-xs font-mono font-semibold text-emerald-400 uppercase tracking-widest">06 — Diskusi & Kolaborasi</span>
         <h2 class="text-3xl font-extrabold text-white">Hubungi Saya</h2>
       </div>
 
@@ -664,8 +903,8 @@
   </main>
 
   <!-- ============ LIGHTBOX MODAL FOR CERTIFICATES ============ -->
-  <div id="certModal" class="fixed inset-0 z-50 hidden bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4">
-    <div class="relative max-w-4xl w-full bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
+  <div id="certModal" onclick="closeModal()" class="fixed inset-0 z-50 hidden bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4">
+    <div onclick="event.stopPropagation()" class="relative max-w-4xl w-full bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
       <div class="p-4 border-b border-slate-800 flex items-center justify-between">
         <h4 id="modalTitle" class="text-sm font-bold text-white">Pratinjau Sertifikat</h4>
         <button onclick="closeModal()" class="text-slate-400 hover:text-white text-lg w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center">
@@ -692,7 +931,6 @@
 
   <!-- ============ JAVASCRIPT CONTROLLER ============ -->
   <script>
-    // Tab switching logic preserving original state router
     function gotoPage(id) {
       document.querySelectorAll('.page-section').forEach(function(sec) { 
         sec.classList.remove('active'); 
@@ -703,7 +941,6 @@
         targetSec.classList.add('active');
       }
 
-      // Update Nav buttons state
       document.querySelectorAll('.nav-btn').forEach(function(btn) {
         if (btn.dataset.target === id) {
           btn.classList.add('active', 'bg-emerald-500/10', 'text-emerald-400', 'border', 'border-emerald-500/30');
@@ -714,7 +951,6 @@
         }
       });
 
-      // Close mobile dropdown
       const mobileMenu = document.getElementById('mobileMenu');
       if (mobileMenu) mobileMenu.classList.add('hidden');
 
@@ -722,7 +958,6 @@
       history.replaceState(null, '', '#' + id);
     }
 
-    // Mobile Hamburger Toggle
     const navToggle = document.getElementById('navToggle');
     const mobileMenu = document.getElementById('mobileMenu');
     if (navToggle && mobileMenu) {
@@ -731,10 +966,9 @@
       });
     }
 
-    // Hash navigation on load
     window.addEventListener('DOMContentLoaded', function() {
       var hash = window.location.hash.replace('#', '');
-      var validPages = ['beranda', 'tentang', 'keahlian', 'project', 'sertifikat', 'kontak'];
+      var validPages = ['beranda', 'tentang', 'keahlian', 'project', 'organisasi', 'sertifikat', 'kontak'];
       if (validPages.indexOf(hash) !== -1) {
         gotoPage(hash);
       } else {
@@ -742,7 +976,6 @@
       }
     });
 
-    // Modal Lightbox controller
     function openModal(imgSrc, title) {
       document.getElementById('modalImg').src = imgSrc;
       document.getElementById('modalTitle').textContent = title;
@@ -753,7 +986,6 @@
       document.getElementById('certModal').classList.add('hidden');
     }
 
-    // Direct WhatsApp message integration from contact form
     function kirimPesan(e) {
       e.preventDefault();
       const nama = document.getElementById('inputNama').value;
